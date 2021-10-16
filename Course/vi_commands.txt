@@ -1,0 +1,52 @@
+Vi     Editor commands:
+
+Esc             Command mode.
+i               Insert mode beginning at current cursor position.
+I               Insert mode beginning of line.
+A               Begin writing at end of line.
+R               Overwrite mode.
+r               Replace single character.
+x               Delete single character.
+cw              Change current word beginning at cursor.
+cW              Change current word ignoring special characters.
+o               open line below curser (insert mode).
+O               open line above curser (insert mode).
+:q              quit.
+:w              write changes to file.
+:wq             write changes and quit.
+:x              write changes and quit.
+ZZ              write changes and quit.
+:q!             quit losing changes.
+:wq!            write changes and quit (use when file is write protected).
+dd              delete current line.
+5dd             delete next 5 lines.
+dw              delete word beginning at cursor.
+dW              delete word beginning at cursor ignoring special characters.
+u               undo last command.
+U               undo changes on current line.
+D               Delete from cursor to end of line.
+yy              "Yank" current line into buffer.
+5yy             "Yank" five lines into buffer.
+p               "Put" buffer onto line below cursor.
+P               "Put" buffer onto line above cursor.
+:1              Go to line 1.
+:5              Go to line 5.
+5G              Go to line 5.
+G               Go to end of document.
+H               Go to top of current page.
+0               Go to beginning of line.
+^G              (Cntrl g) Show current line number.
+$               Go to end of line.
+w               Go to next word.
+W               Go to next word ignoring special characters.
+/abc            Search for lines with string "abc"
+/^abc           Search for lines that begin with "abc"
+:%s/abc/DEF/    Substitute leters "abc" with "DEF"
+:%s/abc/DEF/g   Global substitution.  i.e. multiple occurances on a given line.
+:1,5s/abc/DEF/  Substitute leters "abc" with "DEF" lines 1 thru 5 only.
+:6,.s/abc/DEF/  Substitute leters "abc" with "DEF" line 6 thru current line.
+:6,$s/abc/DEF/  Substitute leters "abc" with "DEF" line 6 thru end of file.
+:%g/abc/d       Delete all lines contaning characters "abc".
+:%v/abc/d       Delete all lines except thoses contaning the characters "abc".
+:set            Set various options.
+:!command..     Execute a command from the shell
